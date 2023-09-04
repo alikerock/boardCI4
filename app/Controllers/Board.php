@@ -35,15 +35,29 @@ class Board extends BaseController
     }
     public function save()
     {
-        $db = db_connect();
-        $subject = $this->request->getVar('subject');
-        $content = $this->request->getVar('content');
-        $myTime = new Time('now', 'Asia/Seoul');
-        $myTime ->modify('+9 hours');
-        $formattedTime = $myTime -> toDateTimeString();
+        // $db = db_connect();
+        // $subject = $this->request->getVar('subject');
+        // $content = $this->request->getVar('content');
+        // $myTime = new Time('now', 'Asia/Seoul');
+        // $myTime ->modify('+9 hours');
+        // $formattedTime = $myTime -> toDateTimeString();
 
-        $sql = "INSERT INTO board (userid, subject, content, regdate) VALUES('test', '{$subject}', '{$content}', '{$formattedTime}')";
-        $result = $db -> query($sql);   
+        // $sql = "INSERT INTO board (userid, subject, content, regdate) VALUES('test', ?,?,?)";
+        // $result = $db -> query($sql,[$subject, $content, $formattedTime]);   
+        $boardModel = new BoardModel();
+
+        $myTime = new Time('now', 'Asia/Seoul');
+        $myTime ->modify('+9 hours');     
+
+        $data = [
+            'userid' => 'test',
+            'subject' => $this->request->getVar('subject'),
+            'content' => $this->request->getVar('content'),
+            'regdate' => $myTime -> toDateTimeString()
+        ];
+        $boardModel ->insert($data);
+
+
         return $this->response ->redirect(site_url('/board')); //쿼리성공후 board 페이지로 이동
     }    
 
