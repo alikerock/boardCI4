@@ -32,7 +32,14 @@ class Board extends BaseController
         $data['view'] = $boardModel -> where('bid', $bid)->first();
         return render('board_view', $data);
     }
-
-
+    public function save()
+    {
+        $db = db_connect();
+        $subject = $request->getVar('subject');
+        $content = $request->getVar('content');
+        $sql = "INSERT INTO board (userid, subject, content) VALUES('test', '{$subject}', '{$content}')";
+        $result = $db -> query($sql);   
+        return $this->response ->redirect(site_url('/board')); //쿼리성공후 board 페이지로 이동
+    }    
 
 }
