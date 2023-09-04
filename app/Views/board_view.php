@@ -2,10 +2,13 @@
 
 
     <div class="mb-3">
-      제목 :       
+      <h3>제목 : <?= $view ->  subject; ?></h3>
+      <p>
+        작성일 : <?= $view ->  regdate; ?> / 작성자: <?= $view ->  userid; ?>
+      </p>
     </div>
     <div class="mb-3">
-      내용: 
+      내용: <?= $view ->  content; ?>
     </div>
 
 
