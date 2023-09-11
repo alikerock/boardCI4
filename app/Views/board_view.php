@@ -11,9 +11,5 @@
       내용: <?= $view ->  content; ?>
     </div>
 
-
-
-
-
 <hr>
 <a href="/board">목록</a> / <a href="/">홈</a>

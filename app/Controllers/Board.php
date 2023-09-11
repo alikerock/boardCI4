@@ -54,7 +54,7 @@ class Board extends BaseController
         $myTime ->modify('+9 hours');     
 
         $data = [
-            'userid' => 'test',
+            'userid' => $_SESSION['userid'],
             'subject' => $this->request->getVar('subject'),
             'content' => $this->request->getVar('content'),
             'regdate' => $myTime -> toDateTimeString()

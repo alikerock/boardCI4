@@ -26,4 +26,23 @@
         </tbody>
     </table>
     <hr>
-    <a href="/board/write">글쓰기</a>/ <a href="/">홈</a>
+    <div class="d-flex justify-content-between">
+        <div class="">            
+            <a href="/" class="btn btn-secondary">홈</a>
+        </div>
+        <div class="">
+            <?php
+                if(isset($_SESSION['userid'])){
+            ?>    
+                <a href="/board/write" class="btn btn-primary">글쓰기</a>
+                <a href="/logout" class="btn btn-warning">로그아웃</a>
+            <?php  
+                } else {
+            ?>  
+                <a href="/login" class="btn btn-warning">로그인</a>
+            <?php      
+                }
+            ?>
+        </div>
+    </div>
+
