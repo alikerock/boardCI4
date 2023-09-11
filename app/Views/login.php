@@ -1,5 +1,8 @@
-<form class="row g-3 needs-validation" action="<?php echo base_url(); ?>loginok" method="post">
+<?php if ($alert = session('alert')):?>
+  <div class="alert alert-warning"><?= $alert ?></div>
+<?php endif ?>
 
+<form class="row g-3 needs-validation" action="<?php echo base_url(); ?>loginok" method="post">
 
   <div class="col-12">
     <label for="validationCustom02" class="form-label">아이디</label>
