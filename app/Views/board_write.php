@@ -1,6 +1,6 @@
-<h2>게시판 글쓰기</h2>
+<h2>게시판 <?php echo isset($view->subject)? '글수정':'글쓰기'; ?></h2>
 
-<form action="<?= site_url('/writesave')?>" method="POST" enctype="multipart/form-data">
+<form action="<?= site_url('/writesave')?><?php echo isset($view->bid)? '/?bid='.$view->bid:''; ?>" method="POST" enctype="multipart/form-data">
 
     <div class="mb-3">
       <label for="username" class="form-label">이름</label>
