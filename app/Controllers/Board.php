@@ -22,7 +22,7 @@ class Board extends BaseController
     {
         if(!isset($_SESSION['userid'])){
             //echo "<script>alert('로그인하세요'); location.href='/login/'</script>";
-            return redirect()->to('/login')->with('alert','로그인하세요');            
+            return redirect()->to('/login')->with('alert','로그인하세요');           
         }
         // return view('board_write');
         return render('board_write');

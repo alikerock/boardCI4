@@ -9,4 +9,8 @@ class MemberController extends BaseController
   public function login(){
     return render('login');
   }
+  public function logout(){
+    $this->$session->destroy();
+    return redirect()->to('/board');
+  }
 }
