@@ -12,4 +12,23 @@
     </div>
 
 <hr>
-<a href="/board">목록</a> / <a href="/">홈</a>
+<div class="d-flex justify-content-between">
+        <div class="">            
+            <a href="/" class="btn btn-secondary">홈</a>
+        </div>
+        <div class="">
+            <?php
+                if(isset($_SESSION['userid'])){
+            ?>    
+                <a href="/modify/<?= $view ->  bid; ?>" class="btn btn-primary">수정</a>
+                <a href="/delete/<?= $view ->  bid; ?>" class="btn btn-danger">삭제</a>                
+                <a href="/logout" class="btn btn-warning">로그아웃</a>
+            <?php  
+                } else {
+            ?>  
+                <a href="/login" class="btn btn-warning">로그인</a>
+            <?php      
+                }
+            ?>
+        </div>
+    </div>
