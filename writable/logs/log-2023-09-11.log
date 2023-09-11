@@ -15,3 +15,133 @@ INFO - 2023-09-11 01:09:01 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-09-11 01:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-09-11 01:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-09-11 01:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-11 01:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-11 02:00:06 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getResultID()
+in APPPATH\Controllers\MemberController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\MemberController->loginok()
+ 2 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+CRITICAL - 2023-09-11 02:02:09 --> Attempt to read property "num_rows" on array
+in APPPATH\Controllers\MemberController.php on line 23.
+ 1 APPPATH\Controllers\MemberController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "num_rows" on array', 'D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\app\\Controllers\\MemberController.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\MemberController->loginok()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+CRITICAL - 2023-09-11 02:04:03 --> Undefined property: App\Controllers\MemberController::$session
+in APPPATH\Controllers\MemberController.php on line 30.
+ 1 APPPATH\Controllers\MemberController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MemberController::$session', 'D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\app\\Controllers\\MemberController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\MemberController->loginok()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+CRITICAL - 2023-09-11 02:04:20 --> Undefined variable $session
+in APPPATH\Controllers\MemberController.php on line 30.
+ 1 APPPATH\Controllers\MemberController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\app\\Controllers\\MemberController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\MemberController->loginok()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+CRITICAL - 2023-09-11 02:05:49 --> Undefined property: App\Controllers\MemberController::$session
+in APPPATH\Controllers\MemberController.php on line 31.
+ 1 APPPATH\Controllers\MemberController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MemberController::$session', 'D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\app\\Controllers\\MemberController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\MemberController->loginok()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+CRITICAL - 2023-09-11 02:06:01 --> Undefined property: App\Controllers\MemberController::$session
+in APPPATH\Controllers\MemberController.php on line 31.
+ 1 APPPATH\Controllers\MemberController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MemberController::$session', 'D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\app\\Controllers\\MemberController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\MemberController->loginok()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+CRITICAL - 2023-09-11 02:06:40 --> Undefined property: App\Controllers\MemberController::$session
+in APPPATH\Controllers\MemberController.php on line 31.
+ 1 APPPATH\Controllers\MemberController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MemberController::$session', 'D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\app\\Controllers\\MemberController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\MemberController->loginok()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+CRITICAL - 2023-09-11 02:07:14 --> Undefined property: App\Controllers\MemberController::$session
+in APPPATH\Controllers\MemberController.php on line 33.
+ 1 APPPATH\Controllers\MemberController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MemberController::$session', 'D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\app\\Controllers\\MemberController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\MemberController->loginok()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+CRITICAL - 2023-09-11 02:07:27 --> Undefined property: App\Controllers\MemberController::$session
+in APPPATH\Controllers\MemberController.php on line 33.
+ 1 APPPATH\Controllers\MemberController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MemberController::$session', 'D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\app\\Controllers\\MemberController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\MemberController->loginok()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+CRITICAL - 2023-09-11 02:12:07 --> Undefined property: App\Controllers\MemberController::$session
+in APPPATH\Controllers\MemberController.php on line 33.
+ 1 APPPATH\Controllers\MemberController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MemberController::$session', 'D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\app\\Controllers\\MemberController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\MemberController->loginok()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+CRITICAL - 2023-09-11 02:14:45 --> Undefined property: App\Controllers\MemberController::$session
+in APPPATH\Controllers\MemberController.php on line 34.
+ 1 APPPATH\Controllers\MemberController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MemberController::$session', 'D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\app\\Controllers\\MemberController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\MemberController->loginok()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+CRITICAL - 2023-09-11 02:14:50 --> Undefined property: App\Controllers\MemberController::$session
+in APPPATH\Controllers\MemberController.php on line 34.
+ 1 APPPATH\Controllers\MemberController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MemberController::$session', 'D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\app\\Controllers\\MemberController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\MemberController->loginok()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-11 02:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-11 02:15:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-11 02:15:42 --> Undefined property: App\Controllers\MemberController::$session
+in APPPATH\Controllers\MemberController.php on line 34.
+ 1 APPPATH\Controllers\MemberController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MemberController::$session', 'D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\app\\Controllers\\MemberController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\MemberController->loginok()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-11 02:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-11 02:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-11 02:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-11 02:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-11 02:21:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\MemberController::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-11 02:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-11 02:21:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\MemberController::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-11 02:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-11 02:21:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
