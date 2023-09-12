@@ -14,7 +14,14 @@
       <label for="content" class="form-label">내용</label>
       <textarea class="form-control" id="content" name="content" rows="3" ><?php echo isset($view->content)? $view->content:''; ?></textarea>
     </div>
-    <button class="btn btn-primary">등록</button>
+    <div class="mb-3">
+      <label for="file" class="form-label">첨부파일</label>
+      <input type="file" class="form-control" id="file" name="upfile" >
+    </div>
+    <?php
+    $btntitle = isset($view->subject)? '수정':'등록';
+    ?>
+    <button class="btn btn-primary"><?= $btntitle; ?></button>
 </form>
 
 
