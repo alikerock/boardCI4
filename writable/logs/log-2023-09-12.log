@@ -131,3 +131,181 @@ WARNING - 2023-09-12 00:52:24 --> [DEPRECATED] Creation of dynamic property App\
  3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 01:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 01:40:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 01:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 01:41:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+CRITICAL - 2023-09-12 01:41:06 --> Undefined variable $FileModel
+in APPPATH\Controllers\Board.php on line 81.
+ 1 APPPATH\Controllers\Board.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $FileModel', 'D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\app\\Controllers\\Board.php', 81)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Board->save()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 01:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 01:41:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 01:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 01:41:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 01:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 01:50:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 01:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 01:50:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 01:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 01:50:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 01:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 01:51:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 01:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 01:51:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 01:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 01:58:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 02:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 02:06:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+CRITICAL - 2023-09-12 02:06:04 --> Undefined variable $data
+in APPPATH\Views\board_view.php on line 2.
+ 1 APPPATH\Views\board_view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\app\\Views\\board_view.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\app\\Views\\board_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('board_view', [], true)
+ 5 APPPATH\Helpers\render_helper.php(10): view('board_view', [...], [])
+ 6 APPPATH\Controllers\Board.php(43): render('board_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Board->view('11')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 02:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 02:06:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 02:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 02:07:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 02:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 02:11:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 02:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 02:19:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+ERROR - 2023-09-12 02:19:50 --> mysqli_sql_exception: Unknown column 'board_bid' in 'where clause' in D:\강사-김동주\ING\2023_KDT\framework-4.4.0\framework-4.4.0\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\강사-김동주\ING\2023_KDT\framework-4.4.0\framework-4.4.0\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `board`....', 0)
+#1 D:\강사-김동주\ING\2023_KDT\framework-4.4.0\framework-4.4.0\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `board`....')
+#2 D:\강사-김동주\ING\2023_KDT\framework-4.4.0\framework-4.4.0\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `board`....')
+#3 D:\강사-김동주\ING\2023_KDT\framework-4.4.0\framework-4.4.0\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `board`....', Array, false)
+#4 D:\강사-김동주\ING\2023_KDT\framework-4.4.0\framework-4.4.0\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\강사-김동주\ING\2023_KDT\framework-4.4.0\framework-4.4.0\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 D:\강사-김동주\ING\2023_KDT\framework-4.4.0\framework-4.4.0\app\Controllers\Board.php(47): CodeIgniter\BaseModel->first()
+#7 D:\강사-김동주\ING\2023_KDT\framework-4.4.0\framework-4.4.0\system\CodeIgniter.php(915): App\Controllers\Board->view('11')
+#8 D:\강사-김동주\ING\2023_KDT\framework-4.4.0\framework-4.4.0\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+#9 D:\강사-김동주\ING\2023_KDT\framework-4.4.0\framework-4.4.0\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\강사-김동주\ING\2023_KDT\framework-4.4.0\framework-4.4.0\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\강사-김동주\ING\2023_KDT\framework-4.4.0\framework-4.4.0\system\Commands\Server\rewrite.php(47): require_once('D:\\\xEA\xB0\x95\xEC\x82\xAC-\xEA\xB9\x80\xEB\x8F...')
+#12 {main}
+CRITICAL - 2023-09-12 02:19:50 --> Unknown column 'board_bid' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `board`.*, `file_table`.`filename`
+FROM `board`
+LEFT JOIN `file_table` ON `file_table`.`bid`=`board`.`bid`
+WHERE `file_table`.`type` = :file_table.type:
+AND `board_bid` = :board_bid:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Board.php(47): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Board->view('11')
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 02:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 02:20:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 02:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 02:20:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')
+INFO - 2023-09-12 02:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-12 02:20:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Board::$session is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\강사-김동주\\ING\\2023_KDT\\framework-4.4.0\\framework-4.4.0\\public\\index.php')

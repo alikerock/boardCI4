@@ -1,3 +1,8 @@
+<?php
+//var_dump($data); echo '<hr>';
+// var_dump($view); echo '<hr>';
+//var_dump($file_view->filename); echo '<hr>';
+?>
 <h2>게시판 글보기</h2>
 
 
@@ -9,6 +14,14 @@
     </div>
     <div class="mb-3">
       내용: <?= $view ->  content; ?>
+
+      <?php
+      if(isset($view->filename)){
+      ?>
+        <img src="<?= base_url('/uploads/'.$view->filename); ?>" class="img-fluid"  alt="" >
+      <?php
+      }
+      ?>
     </div>
 
 <hr>
