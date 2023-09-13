@@ -12,7 +12,7 @@ class Board extends BaseController
     {
         $boardModel = new BoardModel();
         $page = $this->request->getVar('page') ?? 1;
-        $perPage = 3;
+        $perPage = 10;
         $startLimit = ($page-1)*$perPage;
 
         $list = $boardModel -> select('*') -> where('1=1') -> orderBy('bid', 'desc')->limit($perPage, $startLimit)->findAll($perPage, $startLimit);
