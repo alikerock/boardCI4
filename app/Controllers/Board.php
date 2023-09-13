@@ -124,6 +124,14 @@ class Board extends BaseController
         $boardModel = new BoardModel();
         $board = $boardModel->find($bid);
 
+        $fileModel = new FileModel();
+        $files = $fileModel -> where('type', 'board') -> where('bid', $bid)->findAll();
+
+        foreach($files as $file){
+            unlink('uploads/'.$file->filename);//서버에서 해당파일 삭제
+        }        
+        $fileModel -> where('type', 'board') -> where('bid', $bid)->delete();//테이블에서 행 삭제
+
         if($_SESSION['userid'] == $board->userid){
             $boardModel->delete($bid);
             return redirect()->to('/board');
