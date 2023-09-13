@@ -17,9 +17,11 @@ print_r($file_view); echo '<hr>';
 
       <?php
       if(isset($file_view)){
+        foreach($file_view as $fv){
       ?>
-        <img src="<?= base_url('/uploads/'.$file_view->filename); ?>" class="img-fluid"  alt="" >
+        <img src="<?= base_url('/uploads/'.$fv->filename); ?>" class="img-fluid"  alt="" >
       <?php
+        }
       }
       ?>
     </div>
