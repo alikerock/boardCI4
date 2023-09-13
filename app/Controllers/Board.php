@@ -83,11 +83,11 @@ class Board extends BaseController
 
         if($bid){ //수정
             $boardModel ->update($bid,$data);        
-            $insertid= $db->insertID();//board테이블에 글등록후 생기는 고유id를 생성
+            //$insertid= $db->insertID();//board테이블에 글등록후 생기는 고유id를 생성
 
             foreach($filepath as $fp){
                 $fileData=[
-                    'bid' => $insertid,
+                    'bid' => $bid,
                     'userid' => $_SESSION['userid'],
                     'filename' => $fp,
                     'type' => 'board'
