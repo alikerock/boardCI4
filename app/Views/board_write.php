@@ -16,7 +16,7 @@
     </div>
     <div class="mb-3">
       <label for="file" class="form-label">첨부파일</label>
-      <input type="file" class="form-control" id="file" name="upfile" >
+      <input type="file" class="form-control" id="file" name="upfile[]" multiple >
     </div>
     <?php
     $btntitle = isset($view->subject)? '수정':'등록';

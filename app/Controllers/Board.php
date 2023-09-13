@@ -67,15 +67,20 @@ class Board extends BaseController
         ];
 
         $bid = $this->request->getVar('bid'); 
-        $file = $this->request->getFile('upfile'); 
+        // $file = $this->request->getFile('upfile'); 
+        $files = $this->request->getFileMultiple('upfile');  //다중 파일 정보 조회.
+        $filepath = array(); //새 배열 생성, 여러파일명의 정보를 
 
-        $db = db_connect(); //새글등록시 자동으로  file_table의 fid넣을 id생성하기 위해
+        $db = db_connect(); //새글 등록시 자동으로  file_table의 fid넣을 id생성하기 위해
 
-        if($file->getName()){
-            $filename=$file->getName();
-            $newName = $file ->getRandomName();
-            $filepath = $file->store('board/', $newName);
+        foreach($files as $file){
+            if($file->getName()){
+                $filename=$file->getName();
+                $newName = $file ->getRandomName();
+                $filepath[] = $file->store('board/', $newName);
+            }
         }
+
 
         if($bid){ //수정
             $boardModel ->update($bid,$data);            
@@ -83,14 +88,17 @@ class Board extends BaseController
         }else{ //신규 글 등록
             $boardModel ->insert($data);
             $insertid= $db->insertID();//board테이블에 글등록후 생기는 고유id를 생성
-            $fileData=[
-                'bid' => $insertid,
-                'userid' => $_SESSION['userid'],
-                'filename' => $filepath,
-                'type' => 'board'
-            ];
 
-            $fileModel ->insert($fileData);
+            foreach($filepath as $fp){
+                $fileData=[
+                    'bid' => $insertid,
+                    'userid' => $_SESSION['userid'],
+                    'filename' => $fp,
+                    'type' => 'board'
+                ];
+                $fileModel ->insert($fileData);
+            }
+
             return $this->response ->redirect(site_url('/board')); //쿼리성공후 board 페이지로 이동
         }        
     } 
