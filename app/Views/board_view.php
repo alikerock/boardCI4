@@ -1,6 +1,6 @@
 <?php
 //var_dump($data); echo '<hr>';
-// var_dump($view); echo '<hr>';
+//var_dump($view); echo '<hr>';
 //var_dump($file_view->filename); echo '<hr>';
 ?>
 <h2>게시판 글보기</h2>
@@ -16,9 +16,9 @@
       내용: <?= $view ->  content; ?>
 
       <?php
-      if(isset($view->filename)){
+      if(isset($file_view->filename)){
       ?>
-        <img src="<?= base_url('/uploads/'.$view->filename); ?>" class="img-fluid"  alt="" >
+        <img src="<?= base_url('/uploads/'.$file_view->filename); ?>" class="img-fluid"  alt="" >
       <?php
       }
       ?>

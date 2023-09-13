@@ -35,16 +35,17 @@ class Board extends BaseController
         // $result = $db -> query($sql);
         // $data['view'] = $result->getRow();
         $boardModel = new BoardModel();
-        // $data['view'] = $boardModel -> where('bid', $bid)->first();
+        $data['view'] = $boardModel -> where('bid', $bid)->first();
 
         $fileModel = new FileModel();
-        // $data['file_view'] = $fileModel -> where('type', 'board') -> where('bid', $bid)->first();
+        $data['file_view'] = $fileModel -> where('type', 'board') -> where('bid', $bid)->first();
 
-        $data['view'] = $boardModel -> select('board.*,file_table.filename')
-                                    -> join('file_table','file_table.bid=board.bid', 'left')
-                                    -> where('file_table.type','board')
-                                    -> where('board.bid', $bid)
-                                    -> first();
+        // $data['view'] = $boardModel -> select('board.*,file_table.filename')
+        //                             -> join('file_table','file_table.bid=board.bid', 'left')
+        //                             -> where('file_table.type','board')
+        //                             -> where('board.bid', $bid)
+        //                             -> where('file_table.bid', $bid)
+        //                             -> first();
 
         return render('board_view', $data);
 
