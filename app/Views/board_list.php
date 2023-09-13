@@ -29,6 +29,10 @@
         </tbody>
     </table>
     <hr>
+    <div class="pager-links">
+        <?= $pager_links ?>
+    </div>
+    <hr>
     <div class="d-flex justify-content-between">
         <div class="">            
             <a href="/" class="btn btn-secondary">홈</a>
