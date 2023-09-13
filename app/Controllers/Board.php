@@ -81,12 +81,8 @@ class Board extends BaseController
             }
         }
 
-
         if($bid){ //수정
-            $boardModel ->update($bid,$data);            
-            return $this->response ->redirect(site_url('/boardview/'.$bid)); //쿼리성공후 board 페이지로 이동
-        }else{ //신규 글 등록
-            $boardModel ->insert($data);
+            $boardModel ->update($bid,$data);        
             $insertid= $db->insertID();//board테이블에 글등록후 생기는 고유id를 생성
 
             foreach($filepath as $fp){
@@ -97,28 +93,38 @@ class Board extends BaseController
                     'type' => 'board'
                 ];
                 $fileModel ->insert($fileData);
-            }
+            }    
+            return $this->response ->redirect(site_url('/boardview/'.$bid)); //쿼리성공후 board 페이지로 이동
+        }else{ //신규 글 등록
+            $boardModel ->insert($data); 
+            $insertid= $db->insertID();//board테이블에 글등록후 생기는 고유id를 생성
 
+            foreach($filepath as $fp){
+                $fileData=[
+                    'bid' => $insertid,
+                    'userid' => $_SESSION['userid'],
+                    'filename' => $fp,
+                    'type' => 'board'
+                ];
+                $fileModel ->insert($fileData);
+            }    
             return $this->response ->redirect(site_url('/board')); //쿼리성공후 board 페이지로 이동
         }        
     } 
     public function modify($bid = null)
     {
-        /*
-        $db = db_connect();
-        $sql = "SELECT * FROM board WHERE bid={$bid}";
-        $result = $db->query($sql);
-        if($_SESSION['userid'] == $result ->getRow()->userid){
-            $data['view']= $result ->getRow();
-            return render('board_write',$data);
-        } else {
-            echo "<script>
-                alert('본인글만 수정할 수 있습니다.');
-                location.href='/board';
-            </script>";
-        }*/
-        $boardModel = new BoardModel();
+         $boardModel = new BoardModel();
         $board = $boardModel->find($bid);
+
+        //모든 첨부파일 삭제 - 시작
+        $fileModel = new FileModel();
+        $files = $fileModel -> where('type', 'board') -> where('bid', $bid)->findAll();
+
+        foreach($files as $file){
+            unlink('uploads/'.$file->filename);//서버에서 해당파일 삭제
+        }        
+        $fileModel -> where('type', 'board') -> where('bid', $bid)->delete();//테이블에서 행 삭제
+        //모든 첨부파일 삭제 - 끝
 
         if($_SESSION['userid'] == $board->userid){
             $data['view']= $board;
