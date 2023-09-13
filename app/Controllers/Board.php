@@ -38,9 +38,9 @@ class Board extends BaseController
         $data['view'] = $boardModel -> where('bid', $bid)->first();
 
         $fileModel = new FileModel();
-        $data['file_view'] = $fileModel -> where('type', 'board') -> where('bid', $bid)->first();
+        $data['file_view'] = $fileModel -> where('type', 'board') -> where('bid', $bid)->findAll();
 
-        // $data['view'] = $boardModel -> select('board.*,file_table.filename')
+        // $data['view'] = $boardModel -> select('board.*,GROUP_CONCAT(file_table.filename) as fs')
         //                             -> join('file_table','file_table.bid=board.bid', 'left')
         //                             -> where('file_table.type','board')
         //                             -> where('board.bid', $bid)
