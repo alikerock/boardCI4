@@ -171,5 +171,33 @@ class Board extends BaseController
         }
 
     }   
+    public function save_image(){
+        $fileModel = new FileModel();
+        $db = db_connect();
 
+        $file = $this->request->getFile('savefile'); 
+
+        if($file->getName()){
+            $filename=$file->getName();
+            $newName = $file ->getRandomName();
+            $filepath = $file->store('board/', $newName);
+        }
+
+        $fileData=[
+            'bid' => '',
+            'userid' => $_SESSION['userid'],
+            'filename' => $filepath,
+            'type' => 'board'
+        ];
+        $fileModel ->insert($fileData);
+        $insertid = $db->insertID();
+
+        $return_data = array(
+            'result'=>'success',
+            'fid' =>  $insertid,
+            'savename' => $filepath
+        );
+        return json_encode($return_data);
+
+    }
 }
