@@ -200,4 +200,15 @@ class Board extends BaseController
         return json_encode($return_data);
 
     }
+    public function file_delete(){
+        $fileModel = new FileModel();
+        $fid = $this->request->getVar('fid'); 
+        $file = $fileModel -> where('fid', $fid)->first();
+
+        unlink('uploads/'.$file->filename);//서버에서 해당파일 삭제
+        $fileModel -> where('fid', $fid)->delete();//테이블에서 행 삭제
+        
+        $return_data = array('result' => 'ok');
+        return json_encode($return_data);
+    }
 }
